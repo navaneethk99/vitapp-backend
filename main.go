@@ -17,8 +17,8 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/", welcome)
 
 	// user endpoints
-	app.Post("/users", routes.CreatePool)
-	app.Get("/users", routes.GetPools)
+	app.Post("/pools", routes.CreatePool)
+	app.Get("/pools", routes.GetPools)
 	//app.Get("/users/:id", routes.GetUser)
 	//app.Put("/users/:id", routes.UpdateUser)
 	//app.Delete("/users/:id", routes.DeleteUser)
